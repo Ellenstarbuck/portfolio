@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 #title2 {
   color: pink;
 }
@@ -6,50 +11,125 @@ body, html {
   height: 100%;
 }
 
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#aboutMe {
+  font-size: large;
+}
+
+.box1 {
+  height: 500px;
+  width: 400px;
+  padding: 10px;
+  margin:20px;
+
+}
+
+.box2 {
+  height: 400px;
+  padding: 10px;
+  width: 500px;
+  margin:20px;
+}
+
+.software-icons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  width: 500px;
+  height:400px;
+}
+
+.littleBox {
+  height: 80px;
+  width: 80px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.software-icons 
+li {
+  font-size: smaller;
+  justify-content: center;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 5%;
+  margin: 20px 5px 5px 5px;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+}
+
+img {
+  height:40px;
+  width:40px;
+}
+
+.diagonal-black-right {
+  width: 101%;
+  border-bottom: 10px solid black;
+  position: absolute;
+  overflow-x: hidden;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+}
+
 .parallax {
   /* The image used */
-  background-image: url('https://media.giphy.com/media/kBwg78cjHBS7tyvoxG/giphy.gif');
-
-  /* Full height */
-  height: 100%; 
+  background-image: url('https://i.imgur.com/P8iPWhD.jpg');
+  min-height: 200px; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 400px;
 }
 
-
-@-webkit-keyframes fadeInRightBig {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(2000px, 0, 0);
-    transform: translate3d(2000px, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
+.titleBox {
+  width: 1600px;
 }
 
-@keyframes fadeInRightBig {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(2000px, 0, 0);
-    transform: translate3d(2000px, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
+.titleName {
+  font-family: 'ABeeZee', sans-serif;
+  text-align: left
 }
 
-.fadeInRightBig {
-  -webkit-animation-name: fadeInRightBig;
-  animation-name: fadeInRightBig;
+.subtitleName {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  text-align: right;
+}
+
+@media only screen and (max-width: 840px) {
+  .column {
+    width: 100%;
+  }
+  .box {
+    width: 100%;
+  }
+  .box1 {
+    width: 100%;
+  }
+  .box2 {
+    width: 100%;
+  }
+
+  .left-wrapper {
+    width: 100%;
+  }
+
+  .right-wrapper {
+    width: 100%;
+  }
+  main {
+    flex-direction: column;
+  }
 }

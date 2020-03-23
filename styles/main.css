@@ -23,6 +23,7 @@ body, html {
   font-size: large;
 }
 
+
 .box1 {
   height: 500px;
   width: 400px;
@@ -58,6 +59,7 @@ li {
   border-radius: 5%;
   margin: 20px 5px 5px 5px;
   width: 100px;
+  padding-top: 5px;
   text-align: center;
 }
 
@@ -73,6 +75,92 @@ body > div.about > div.right-wrapper > div > ul > li:nth-child(16) > img {
 
 
 
+.projectBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.projectInfo {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.project1 {
+  display: flex;
+  width: 450px;
+  height: 250px;
+  
+}
+
+#projectTitle {
+  color: rgb(58, 58, 58);
+  line-height: 2.5;
+}
+
+#projectTitleAC {
+  color: rgb(58, 58, 58);
+  line-height: 3;
+  font-size: 26px;
+}
+
+
+.iconsList {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.iconsBox 
+li {
+  margin: 8px;
+  width: 20px;
+  height: 20px;
+  padding-top: 5px;
+}
+
+#buttonHeroku {
+  width: 95px;
+  height: 45px;
+  margin-right: 8px;
+  margin-top: 3px;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-size: 15px;
+
+}
+
+#buttonGithub {
+  width: 95px;
+  height: 45px;
+  margin-top: 3px;
+  margin-left: 30px;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-size: 15px;
+
+}
+
+
+#imageBox {
+  background-image: url(../assets/mactransparent.png);
+  background-size: contain;
+  height: 500px;
+  width: 100%;
+  background-repeat:no-repeat;
+  display: flex;
+  margin: auto;
+  display: flex
+}
+
+.galleryBox {
+  position: absolute;
+  left: 26px;
+  top: 23px;
+}
+
+
 .diagonal-black-right {
   opacity: 0.9;
   width: 101%;
@@ -83,7 +171,9 @@ body > div.about > div.right-wrapper > div > ul > li:nth-child(16) > img {
 
 .box {
   width: 400px;
-  height: 400px;
+  height: 430px;
+  margin-left: 650px;
+  display: flex;
 }
 
 .parallax {
@@ -112,34 +202,100 @@ body > div.about > div.right-wrapper > div > ul > li:nth-child(16) > img {
   text-align: right;
 }
 
+#projectBoxTitle {
+  margin-left: 100px;
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  margin-left: 585px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#projectInfoSlide {
+  display: flex;
+}
+
+
 @media only screen and (max-width: 840px) {
   .column {
     width: 100%;
   }
 
-  .about {
+  
+
+  .about, .main, .titleBox, .box, .box1, .box2, .left-wrapper, .right-wrapper, .slideshow-container, .box, .projectBox, #projectInfoSlide {
     width: 100%;
     flex-direction: column;
   }
 
-  .box {
-    width: 100%;
-  }
-  .box1 {
-    width: 100%;
-  }
-  .box2 {
-    width: 100%;
-  }
-
-  .left-wrapper {
-    width: 100%;
-  }
-
-  .right-wrapper {
-    width: 100%;
-  }
-  main {
+  /* main {
     flex-direction: column;
   }
+ */
+
 }

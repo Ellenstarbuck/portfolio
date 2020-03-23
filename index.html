@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
 
-    <!-- <script src="scripts/app.js"></script> -->
+    <script src="scripts/app.js"></script>
     
   </head>
   <body>
@@ -121,29 +121,265 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
   <div class="diagonal-black-right"></div>
 <div class="parallax"></div>  
 <div class="diagonal-black-right"></div>
+<div class='titleBox'style="height:120px;background-color:white;font-size:36px;"> 
+  <div class="column is-half
+  is-offset-one-quarter is-3">
+  <h1 class="titleName">&nbsp;&nbsp;&nbsp;&nbsp;Projects</h1>
+  </div>
+</div>
 <div class='about'>
   <div class='projects'>
-    <h1 class="subtitleName">Projects</h1>
-    <br>
-    <br>
-    <div class="card">
-      <p class="titleName">Dr Froggy M.D</p>
     <div class='imageBox'>
-      
-      
-    </div>
-      </div>
-      
+      <div class="slideshow-container" id='imageBox'>
+
+        <!-- Full-width images with number and caption text -->      
+        <div class="projectBox">
+          <div class="mySlides fade">
+            <div class=box id='projectInfoSlide'>
+              <div class='project1'>
+                <div class='projectInfo'>
+                  <div class='projectText'>
+                    <h2 class="subtitleName" id="projectBoxTitle">Story Maker</h2>
+                    <br>
+                    <p class='titleName'>
+                      Solo project. One week. 
+                      Story Maker is a collaborative story telling app for children and pre-teens, enabling them to write a story together a line at a time.
+                      Full-stack application with front-end built in Create React with JavaScript, and back-end built in Django with Python. Utilising my own API’s, and TablePlus to build databases, styled with Bulma.
+                    </p>
+                  </div>
+                  <div class='iconsBox'>
+                    <ul class='iconsList'>
+                      <li class='tinyBox'>
+                        <i class="fab fa-js-square fa-2x"></i>
+                        <li class='littleBox'> 
+                          <img src="https://i.imgur.com/SuGSqnK.jpg">
+                        </li>  
+                      </li>
+                      <li class='tinyBox'>
+                        <i class="fab fa-html5 fa-2x"></i>
+                      </li>
+                      <li class='tinyBox'>
+                        <i class="fab fa-css3-alt fa-2x"></i>
+                      </li>
+                      <li class='tinyBox'>
+                      <i class="fab fa-react fa-2x"></i>
+                      </li>
+                      <li class='tinyBox'> 
+                        <i class="fab fa-python fa-2x"></i>
+                      </li>
+                      <li class='littleBox'> 
+                        <i class="fab fa-node-js fa-2x"></i>
+                      </li>
+                      <li class='tinyBox'> 
+                        <img src="https://i.imgur.com/4LAh5pI.png">
+                      </li>
+                    </ul>
+                  <br>
+                  <a class='button is-small is-primary is-rounded' id='buttonHeroku'>Open project</a>
+                  <a class='button is-small is-primary is-rounded'id='buttonGithub'>View on gibhub</a>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="galleryBox">
+            <img src="./assets/storymaker.png" style="width:571px; height:324px;">
+            <div class="subtitleName" id="projectTitle">Story Maker</div>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class=box id='projectInfoSlide'>
+              <div class='project1'>
+                <div class='projectInfo'>
+                  <div class='projectText'>
+                    <h2 class="subtitleName" id="projectBoxTitle">GeocachR</h2>
+                    <br>
+                    <p class='titleName'>
+                      Group project. One week. 
+                      A full-stack MERN application. GeocachR is a geocaching site, which allows users to partake in a real-world treasure hunting game. Participants navigate to a specific set of GPS coordinates and then attempt to find the geocache container hidden at that location. 
+                    </p>
+                  </div>
+                  <div class='iconsBox'>
+                    <ul class='iconsList'>
+                      <li class='tinyBox'>
+                        <i class="fab fa-js-square fa-2x"></i>
+                      </li>
+                      <li class='littleBox'> 
+                        <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg">
+                      </li>
+                      <li class='tinyBox'>
+                        <i class="fab fa-html5 fa-2x"></i>
+                      </li>
+                      <li class='tinyBox'>
+                        <i class="fab fa-css3-alt fa-2x"></i>
+                      </li>
+                      <li class='tinyBox'>
+                        <i class="fab fa-react fa-2x"></i>
+                        </li>
+                        <li class='littleBox'> 
+                          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="48" height="48"
+            viewBox="0 0 226 226"
+            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,226v-226h226v226z" fill="none"></path><g><path d="M197.75,81.45417c0,96.52083 -84.75,125.7125 -84.75,125.7125c0,0 -84.75,-29.19167 -84.75,-125.7125c0,-11.77083 0.94167,-21.65833 1.88333,-29.6625c1.4125,-11.77083 9.41667,-21.1875 20.71667,-24.0125c14.59583,-4.2375 37.66667,-8.94583 62.15,-8.94583c24.48333,0 47.55417,4.70833 62.62083,8.94583c11.3,2.825 19.30417,12.7125 20.71667,24.0125c0.47083,8.00417 1.4125,18.3625 1.4125,29.6625z" fill="#ffffff"></path><path d="M113,32.95833c23.07083,0 44.72917,4.70833 58.85417,8.475c5.65,1.4125 9.41667,6.12083 10.35833,12.24167c0.94167,8.94583 1.4125,18.3625 1.4125,27.77917c0,73.45 -54.14583,103.1125 -70.625,110.175c-16.47917,-7.53333 -70.625,-37.19583 -70.625,-110.175c0,-9.41667 0.47083,-18.83333 1.4125,-27.77917c0.47083,-6.12083 4.70833,-10.82917 10.35833,-12.24167c14.125,-3.76667 35.78333,-8.475 58.85417,-8.475M113,18.83333c-24.48333,0 -47.55417,4.70833 -62.62083,8.94583c-10.82917,2.825 -19.30417,12.7125 -20.24583,24.0125c-0.94167,8.00417 -1.88333,18.3625 -1.88333,29.6625c0,96.52083 84.75,125.7125 84.75,125.7125c0,0 84.75,-29.19167 84.75,-125.7125c0,-11.77083 -0.94167,-21.65833 -1.88333,-29.6625c-1.4125,-11.77083 -9.41667,-21.1875 -20.71667,-24.0125c-14.59583,-4.2375 -37.66667,-8.94583 -62.15,-8.94583z" fill="#cccccc"></path><path d="M108.29167,131.83333h9.41667v37.66667h-9.41667z" fill="#95a5a6"></path><path d="M113,47.08333c0,0 -28.25,23.54167 -28.25,61.20833c0,24.48333 15.5375,40.02083 23.54167,47.08333l4.70833,-14.125l4.70833,14.125c8.00417,-7.0625 23.54167,-22.6 23.54167,-47.08333c0,-37.66667 -28.25,-61.20833 -28.25,-61.20833z" fill="#cccccc"></path><path d="M113,47.08333c0,0 -28.25,23.54167 -28.25,61.20833c0,24.48333 15.5375,40.02083 23.54167,47.08333l4.70833,-14.125z" fill="#333333"></path></g></g></svg>
+                        </li>
+                    </ul>
+                  <br>
+                  <a class='button is-small is-primary is-rounded' id='buttonHeroku'>Open project</a>
+                  <a class='button is-small is-primary is-rounded'id='buttonGithub'>View on gibhub</a>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="galleryBox">
+            <img src="./assets/index.jpg" style="width:571px; height:324px;">
+            <div class="subtitleName" id="projectTitle">GeocachR</div>
           </div>
           </div>
-      
+
+          <div class="mySlides fade">
+          <div class=box id='projectInfoSlide'>
+            <div class='project1'>
+              <div class='projectInfo'>
+                <div class='projectText'>
+                  <h2 class="subtitleName" id="projectBoxTitle">Comic Book DB</h2>
+                  <br>
+                  <p class='titleName'>
+                    Solo project. One week. Full-stack application. A database of comic books for new and old readers, where users can login and upload their own recommendations.
+                  </p>
+                </div>
+                <div class='iconsBox'>
+                  <ul class='iconsList'>
+                    <li class='tinyBox'>
+                      <i class="fab fa-js-square fa-2x"></i>
+                    </li>
+                    <li class='littleBox'> 
+                      <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg">
+                    </li>
+                    <li class='tinyBox'>
+                      <i class="fab fa-html5 fa-2x"></i>
+                    </li>
+                    <li class='tinyBox'>
+                      <i class="fab fa-css3-alt fa-2x"></i>
+                    </li>
+                    <li class='tinyBox'>
+                      <i class="fab fa-react fa-2x"></i>
+                      </li>
+                      <li class='littleBox'> 
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+          width="48" height="48"
+          viewBox="0 0 226 226"
+          style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,226v-226h226v226z" fill="none"></path><g><path d="M197.75,81.45417c0,96.52083 -84.75,125.7125 -84.75,125.7125c0,0 -84.75,-29.19167 -84.75,-125.7125c0,-11.77083 0.94167,-21.65833 1.88333,-29.6625c1.4125,-11.77083 9.41667,-21.1875 20.71667,-24.0125c14.59583,-4.2375 37.66667,-8.94583 62.15,-8.94583c24.48333,0 47.55417,4.70833 62.62083,8.94583c11.3,2.825 19.30417,12.7125 20.71667,24.0125c0.47083,8.00417 1.4125,18.3625 1.4125,29.6625z" fill="#ffffff"></path><path d="M113,32.95833c23.07083,0 44.72917,4.70833 58.85417,8.475c5.65,1.4125 9.41667,6.12083 10.35833,12.24167c0.94167,8.94583 1.4125,18.3625 1.4125,27.77917c0,73.45 -54.14583,103.1125 -70.625,110.175c-16.47917,-7.53333 -70.625,-37.19583 -70.625,-110.175c0,-9.41667 0.47083,-18.83333 1.4125,-27.77917c0.47083,-6.12083 4.70833,-10.82917 10.35833,-12.24167c14.125,-3.76667 35.78333,-8.475 58.85417,-8.475M113,18.83333c-24.48333,0 -47.55417,4.70833 -62.62083,8.94583c-10.82917,2.825 -19.30417,12.7125 -20.24583,24.0125c-0.94167,8.00417 -1.88333,18.3625 -1.88333,29.6625c0,96.52083 84.75,125.7125 84.75,125.7125c0,0 84.75,-29.19167 84.75,-125.7125c0,-11.77083 -0.94167,-21.65833 -1.88333,-29.6625c-1.4125,-11.77083 -9.41667,-21.1875 -20.71667,-24.0125c-14.59583,-4.2375 -37.66667,-8.94583 -62.15,-8.94583z" fill="#cccccc"></path><path d="M108.29167,131.83333h9.41667v37.66667h-9.41667z" fill="#95a5a6"></path><path d="M113,47.08333c0,0 -28.25,23.54167 -28.25,61.20833c0,24.48333 15.5375,40.02083 23.54167,47.08333l4.70833,-14.125l4.70833,14.125c8.00417,-7.0625 23.54167,-22.6 23.54167,-47.08333c0,-37.66667 -28.25,-61.20833 -28.25,-61.20833z" fill="#cccccc"></path><path d="M113,47.08333c0,0 -28.25,23.54167 -28.25,61.20833c0,24.48333 15.5375,40.02083 23.54167,47.08333l4.70833,-14.125z" fill="#333333"></path></g></g></svg>
+                      </li>
+                  </ul>
+                <br>
+                <a class='button is-small is-primary is-rounded' id='buttonHeroku'>Open project</a>
+                <a class='button is-small is-primary is-rounded'id='buttonGithub'>View on gibhub</a>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="galleryBox">
+          <img src="./assets/comicbook1.jpg" style="width:571px; height:324px;">
+          <br>
+          <div class="subtitleName" id="projectTitle">Comic Book DB</div>
+          </div>
+          </div>
+
+
+          <div class="mySlides fade">
+          <div class=box id='projectInfoSlide'>
+            <div class='project1'>
+              <div class='projectInfo'>
+                <div class='projectText'>
+                  <h2 class="subtitleName" id="projectBoxTitle">Asteroid Catasteroid</h2>
+                  <br>
+                  <p class='titleName'>
+                    Pair project. Two days. 
+                    Front end application built with React and Bulma. Users input a date into the app, and it gives them information on the top five Asteroids closest to Earth on that date. The app uses two NASA RESTful API's. 
+                  </p>
+                </div>
+                <div class='iconsBox'>
+                  <ul class='iconsList'>
+                    <li class='tinyBox'>
+                      <i class="fab fa-js-square fa-2x"></i>
+                    </li>
+                    <li class='tinyBox'>
+                      <i class="fab fa-html5 fa-2x"></i>
+                    </li>
+                    <li class='tinyBox'>
+                      <i class="fab fa-css3-alt fa-2x"></i>
+                    </li>
+                    <li class='tinyBox'>
+                      <i class="fab fa-react fa-2x"></i>
+                      </li>
+                  </ul>
+                <br>
+                <a class='button is-small is-primary is-rounded' id='buttonHeroku'>Open project</a>
+                <a class='button is-small is-primary is-rounded'id='buttonGithub'>View on gibhub</a>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="galleryBox">
+          <img src="./assets/asteroid.jpg" style="width:571px; height:324px;">
+          <div class="subtitleName" id="projectTitleAC">Asteroid Catasteroid</div>
+          </div>
         </div>
 
-    </div>
 
-  </div>
+          <div class="mySlides fade">
+          <div class=box id='projectInfoSlide'>
+            <div class='project1'>
+              <div class='projectInfo'>
+                <div class='projectText'>
+                  <h2 class="subtitleName" id="projectBoxTitle">Dr Frogger M.D</h2>
+                  <br>
+                  <p class='titleName'>
+                    Solo project. Ten days. 
+                    Front end game application built in vanilla JavaScript, HTML and CSS. The player has to get four ‘frog doctors’ safely across the grid to the lilypads on the other side before the time runs out.
+                  </p>
+                </div>
+                <div class='iconsBox'>
+                  <ul class='iconsList'>
+                    <li class='tinyBox'>
+                      <i class="fab fa-js-square fa-2x"></i>
+                    </li>
+                    <li class='tinyBox'>
+                      <i class="fab fa-html5 fa-2x"></i>
+                    </li>
+                    <li class='tinyBox'>
+                      <i class="fab fa-css3-alt fa-2x"></i>
+                    </li>
+                  </ul>
+                <br>
+                <a class='button is-small is-primary is-rounded' id='buttonHeroku'>Open project</a>
+                <a class='button is-small is-primary is-rounded'id='buttonGithub'>View on gibhub</a>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="galleryBox">
+          <img src="./assets/frogs2.png" style="width:571px; height:324px;">
+          <div class="subtitleName" id="projectTitle">Dr Frogger M.D</div>
+        </div>
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+      </div>
+      <br>
+      </div>
+
+
 
 </div>
+</div>
+</div>
+</div>
+
+
+
 <div class="diagonal-black-right"></div>
 <div class="parallax"></div> 
 <div class="diagonal-black-right"></div>

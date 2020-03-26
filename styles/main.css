@@ -16,28 +16,62 @@ body, html {
   flex-direction: row;
   justify-content: center;
   margin-top: 10px;
-  margin-bottom: 30px;
+  height: 650px
+}
+
+.about2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  height: 650px
+}
+
+.about3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  height: 700px;
+}
+
+.about4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  height: 650px
 }
 
 #aboutMe {
-  font-size: large;
+  font-size: 25px;
 }
 
 
 .box1 {
   height: 500px;
-  width: 400px;
+  width: 500px;
+  padding: 10px;
+  margin:20px;
+
+}
+
+.contactBox {
+  height: 500px;
+  width: 450px;
   padding: 10px;
   margin:20px;
 
 }
 
 .box2 {
-  height: 400px;
+  height: 00px;
   padding: 10px;
   width: 500px;
   margin:20px;
 }
+
+
 
 .software-icons {
   display: flex;
@@ -121,7 +155,7 @@ li {
 }
 
 #buttonHeroku {
-  width: 95px;
+  width: 105px;
   height: 45px;
   margin-right: 8px;
   margin-top: 3px;
@@ -132,7 +166,7 @@ li {
 }
 
 #buttonGithub {
-  width: 95px;
+  width: 128px;
   height: 45px;
   margin-top: 3px;
   margin-left: 30px;
@@ -171,7 +205,7 @@ li {
 
 .box {
   width: 400px;
-  height: 430px;
+  height: 490px;
   margin-left: 650px;
   display: flex;
 }
@@ -191,9 +225,26 @@ li {
   width: 1600px;
 }
 
+.titleBox2 {
+  width: 1600px;
+  margin-top: 20px;
+}
+
+.titleBox3 {
+  width: 1600px;
+  margin-top: 20px;
+}
+
 .titleName {
   font-family: 'ABeeZee', sans-serif;
   text-align: left
+}
+
+.titleNamePara {
+  font-family: 'ABeeZee', sans-serif;
+  text-align: left;
+  font-size: 20px;
+
 }
 
 .subtitleName {
@@ -285,17 +336,16 @@ li {
   .column {
     width: 100%;
   }
-
+  
   
 
-  .about, .main, .titleBox, .box, .box1, .box2, .left-wrapper, .right-wrapper, .slideshow-container, .box, .projectBox, #projectInfoSlide {
+  .about, .about2 .main, .contactBox, .titleBox, .box, .box1, .box2, .left-wrapper, .right-wrapper, .slideshow-container, .box, .projectBox, #projectInfoSlide {
     width: 100%;
+    display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+
   }
 
-  /* main {
-    flex-direction: column;
-  }
- */
 
 }

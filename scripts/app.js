@@ -36,8 +36,42 @@ function init() {
 
   showSlides(slideIndex)
 
+  const navBurger = document.querySelector('.navbar-menu')
+  const navBurgerMenu = document.querySelector('.navbar-burger')
+  
+  function toggleBurger(){
+    navBurger.classList.toggle('is-active')
+  }
+
+
+  var dropdown = document.querySelector('.dropdown')
+  var body = document.querySelector('body')
+  console.log(body)
+  let show = false 
+
+
+
+  function dropdownToggle() {
+    if (!show) {
+      dropdown.classList.toggle('is-active')
+      show = true
+    }
+  }
+
+  function bodyClick() {
+    if (show) {
+      dropdown.classList.toggle('is-active')
+    }
+  }
+  
+
+
   previous.addEventListener('click', previousSlide)
   next.addEventListener('click', nextSlide)
+  navBurgerMenu.addEventListener('click', toggleBurger)
+  dropdown.addEventListener('click', dropdownToggle)
+  body.addEventListener('click', bodyClick)
+
   
 }
 

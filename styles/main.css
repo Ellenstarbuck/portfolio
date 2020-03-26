@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #title2 {
   color: pink;
 }
@@ -16,7 +20,7 @@ body, html {
   flex-direction: row;
   justify-content: center;
   margin-top: 10px;
-  height: 650px
+  height: 650px;
 }
 
 .about2 {
@@ -223,11 +227,17 @@ li {
 
 .titleBox {
   width: 1600px;
+  height:120px;
+  background-color:white;
+  font-size:36px;
 }
 
 .titleBox2 {
   width: 1600px;
   margin-top: 20px;
+  height:90px;
+  background-color:white;
+  font-size:36px;
 }
 
 .titleBox3 {
@@ -331,21 +341,87 @@ li {
   display: flex;
 }
 
+.projectBoxMobile {
+  display: none;
+}
 
-@media only screen and (max-width: 840px) {
-  .column {
+
+@media only screen and (max-width: 1090px) {
+  /* .column {
     width: 100%;
+  } */
+
+  .titleBox {
+    height: 140px;
+    text-align: left;
   }
-  
-  
 
-  .about, .about2 .main, .contactBox, .titleBox, .box, .box1, .box2, .left-wrapper, .right-wrapper, .slideshow-container, .box, .projectBox, #projectInfoSlide {
-    width: 100%;
-    display: flex;
+  .about, .about2, .about3, .about4 {
     flex-direction: column;
     flex-wrap: wrap;
-
+    width: 100%;
+    justify-content: flex-start;
+    height: 1200px;
   }
+
+  .about2 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+    height: 550px;
+  }
+
+  .left-wrapper {
+    display: flex;
+    align-self: center;
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+
+  .right-wrapper {
+    display: flex;
+    align-self: center;
+    flex-basis: 0;
+    flex-grow: 1;
+    margin-top: 40px;
+  }
+
+  .right-wrapper1 {
+    display: flex;
+    align-self: center;
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+
+  #projectInfoSlide, .buttonBox {
+    display: none;
+  }
+
+  .projectBoxMobile {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+
+  #projectBoxMobile {
+    margin: auto;
+    margin-top:40px;
+  }
+
+  #imageBox {
+    margin-left: 30px;
+  }
+
+
+  
+
+
+  main {
+    flex-direction: column;
+  }
+  
 
 
 }

@@ -44,33 +44,34 @@ function init() {
   }
 
 
-  var dropdown = document.querySelector('.dropdown')
-  var body = document.querySelector('body')
-  console.log(body)
+  
+  
+  
+
+
+
   let show = false 
 
+  var dropdown = document.querySelector('.dropdown')
 
-
-  function dropdownToggle() {
-    if (!show) {
+  function bodyClick(e) {
+    if (dropdown.contains(e.target)) {
       dropdown.classList.toggle('is-active')
-      show = true
+      show = !show
+    } else {
+      dropdown.classList.remove('is-active')
+      show = false
     }
+    
   }
-
-  function bodyClick() {
-    if (show) {
-      dropdown.classList.toggle('is-active')
-    }
-  }
+  
   
 
 
   previous.addEventListener('click', previousSlide)
   next.addEventListener('click', nextSlide)
   navBurgerMenu.addEventListener('click', toggleBurger)
-  dropdown.addEventListener('click', dropdownToggle)
-  body.addEventListener('click', bodyClick)
+  document.addEventListener('click', bodyClick)
 
   
 }

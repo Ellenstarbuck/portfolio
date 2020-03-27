@@ -20,7 +20,6 @@ body, html {
   flex-direction: row;
   justify-content: center;
   margin-top: 10px;
-  height: 650px;
 }
 
 .about2 {
@@ -35,16 +34,12 @@ body, html {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 20px;
-  height: 700px;
 }
 
 .about4 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 10px;
-  height: 650px
 }
 
 #aboutMe {
@@ -53,11 +48,16 @@ body, html {
 
 
 .box1 {
-  height: 500px;
   width: 500px;
   padding: 10px;
   margin:20px;
 
+}
+
+.boxExperienceLeft {
+  width: 500px;
+  padding: 10px;
+  margin:20px;
 }
 
 .contactBox {
@@ -69,7 +69,12 @@ body, html {
 }
 
 .box2 {
-  height: 00px;
+  padding: 10px;
+  width: 500px;
+  margin:20px;
+}
+
+.boxExperienceRight {
   padding: 10px;
   width: 500px;
   margin:20px;
@@ -83,7 +88,6 @@ body, html {
   flex-direction: row;
   list-style: none;
   width: 500px;
-  height:400px;
 }
 
 .littleBox {
@@ -196,6 +200,8 @@ li {
   position: absolute;
   left: 26px;
   top: 23px;
+  width:571px; 
+  height:324px;
 }
 
 
@@ -225,17 +231,20 @@ li {
   background-size: 400px;
 }
 
+.titleBoxFlex {
+  display: flex;
+  justify-content: center;
+}
+
 .titleBox {
-  width: 1600px;
-  height:120px;
+  width: 1000px;
   background-color:white;
   font-size:36px;
 }
 
 .titleBox2 {
-  width: 1600px;
+  width: 1000px;
   margin-top: 20px;
-  height:90px;
   background-color:white;
   font-size:36px;
 }
@@ -260,7 +269,6 @@ li {
 .subtitleName {
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
-  text-align: right;
 }
 
 #projectBoxTitle {
@@ -345,11 +353,217 @@ li {
   display: none;
 }
 
+.contactImage {
+  height: 473px;
+  width:418px;
+} 
 
-@media only screen and (max-width: 1090px) {
-  /* .column {
+
+@media only screen and (max-width: 1024px) {
+
+
+  .box1 {
     width: 100%;
-  } */
+    padding: 10px;
+    margin:20px;
+  }  
+
+  .boxExperienceLeft {
+    width: 100%;
+    padding: 10px 10px 0px 10px;
+    margin: 20px 20px 0px 20px;
+  }
+
+
+  .titleBox {
+    height: 140px;
+    width: 100%;
+  } 
+
+  .about {
+    flex-direction: column;
+  }
+  
+  .about3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .projectImage2 {
+    width: 315px;
+  }
+
+
+  .about4 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-wrapper {
+    display: flex;
+    flex-grow: 0.8;
+    flex-basis: 0;
+    width: 100%;
+    
+  } 
+
+  .right-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    flex-basis: 0;
+    flex-grow: 0.8;
+  } 
+
+  .left-wrapper1 {
+    display: flex;
+    flex-grow: 0.8;
+    flex-basis: 0;
+    width: 100%;
+    max-width: 677px;
+  } 
+
+  .box2 {
+    width: 100%;
+  }
+
+  .boxExperienceRight {
+    width: 100%;
+    padding: 0px 10px 10px 10px;
+    margin: 0px 20px 20px 20px;
+  }
+
+  .software-icons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .right-wrapper1 {
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 0.87;
+    width: 100%;
+    max-width: 677px;
+  }
+
+  .right-wrapper3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    flex-basis: 0;
+    flex-grow: 0.35;
+    width: 380px;
+  }
+
+  .contactImage {
+    width: 318px;
+    height: 372px;
+  }
+
+  #projectInfoSlide, .buttonBox {
+    display: none;
+  }
+
+  .projectBoxMobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #projectBoxMobile {
+    margin: 10px;
+    width: 380px;
+    height: 600px;
+  }
+
+  #projectBoxMobile2 {
+    margin: 10px;
+    width: 380px;
+    height: 550px;
+  }
+
+  #projectBoxMobile3 {
+    margin: 10px;
+    width: 380px;
+    height: 500px;
+  }
+
+  #projectBoxMobile4 {
+    margin: 10px;
+    width: 380px;
+    height: 500px;
+  }
+
+  #projectBoxMobile5 {
+    margin: 10px;
+    width: 380px;
+    height: 550px;
+  }
+
+  #imageBox {
+    display: none;
+  }
+
+  .galleryBox1 {
+    width:200px; 
+    height:180px;
+  }
+  
+
+
+  main {
+    flex-direction: column;
+  }
+  
+
+
+
+  .titleBox {
+    font-size:30px;
+  }
+  
+  .titleBox2 {
+    font-size:30px;
+    width: 100%;
+  }
+  
+  .titleBox3 {
+    margin-top: 14px;
+  }
+
+  
+  .titleNamePara {
+    font-size: 15px;
+  
+  }
+
+  #aboutMe {
+    font-size: 15px;
+  }
+
+  .titleName {
+    text-align: center;
+  }
+  
+  .subtitleName {
+    font-size: 26px;
+    text-align: center;
+  }
+  
+  #projectBoxTitle {
+    margin-left: auto;
+  }
+  
+
+}
+
+
+/* @media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+
 
   .titleBox {
     height: 140px;
@@ -374,14 +588,13 @@ li {
 
   .left-wrapper {
     display: flex;
-    align-self: center;
+    align-self: left;
     flex-basis: 0;
     flex-grow: 1;
   }
 
   .right-wrapper {
     display: flex;
-    align-self: center;
     flex-basis: 0;
     flex-grow: 1;
     margin-top: 40px;
@@ -389,7 +602,6 @@ li {
 
   .right-wrapper1 {
     display: flex;
-    align-self: center;
     flex-basis: 0;
     flex-grow: 1;
   }
@@ -424,4 +636,7 @@ li {
   
 
 
-}
+
+
+  
+} */

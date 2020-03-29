@@ -13,6 +13,7 @@ html {
 
 body, html {
   height: 100%;
+  width: 100%;
 }
 
 .about {
@@ -46,11 +47,15 @@ body, html {
   font-size: 25px;
 }
 
+#contactFont {
+  font-size: 20px;
+} 
+
 
 .box1 {
   width: 500px;
-  padding: 10px;
-  margin:20px;
+  padding: 5px;
+  margin: 10px;
 
 }
 
@@ -61,7 +66,6 @@ body, html {
 }
 
 .contactBox {
-  height: 500px;
   width: 450px;
   padding: 10px;
   margin:20px;
@@ -132,7 +136,7 @@ body > div.about > div.right-wrapper > div > ul > li:nth-child(16) > img {
 .project1 {
   display: flex;
   width: 450px;
-  height: 250px;
+  
   
 }
 
@@ -207,7 +211,7 @@ li {
 
 .diagonal-black-right {
   opacity: 0.9;
-  width: 101%;
+  width: 100%;
   border-bottom: 10px solid black;
   position: absolute;
   overflow-x: hidden;
@@ -215,7 +219,6 @@ li {
 
 .box {
   width: 400px;
-  height: 490px;
   margin-left: 650px;
   display: flex;
 }
@@ -245,6 +248,14 @@ li {
 .titleBox2 {
   width: 1000px;
   margin-top: 20px;
+  background-color:white;
+  font-size:36px;
+}
+
+.titleBox4 {
+  width: 1000px;
+  margin-top: 20px;
+  margin-bottom: 5px;
   background-color:white;
   font-size:36px;
 }
@@ -354,18 +365,28 @@ li {
 }
 
 .contactImage {
-  height: 473px;
-  width:418px;
+  width: 100%;
+  max-width:418px;
 } 
 
+.navBox {
+  display: flex;
+  margin: auto;
+}
 
 @media only screen and (max-width: 1024px) {
+
+
+  .contactBox {
+    width: 100%;
+  }
 
 
   .box1 {
     width: 100%;
     padding: 10px;
-    margin:20px;
+    margin: 20px;
+    max-width: 677px;
   }  
 
   .boxExperienceLeft {
@@ -404,7 +425,9 @@ li {
     display: flex;
     flex-grow: 0.8;
     flex-basis: 0;
+    align-self: center;
     width: 100%;
+    max-width: 677px;
     
   } 
 
@@ -414,6 +437,8 @@ li {
     align-self: center;
     flex-basis: 0;
     flex-grow: 0.8;
+    width: 100%;
+    max-width: 677px;
   } 
 
   .left-wrapper1 {
@@ -458,8 +483,8 @@ li {
   }
 
   .contactImage {
-    width: 318px;
-    height: 372px;
+    width: 100%;
+    max-width: 20px;
   }
 
   #projectInfoSlide, .buttonBox {
@@ -470,37 +495,15 @@ li {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: space-between
   }
 
   #projectBoxMobile {
     margin: 10px;
     width: 380px;
-    height: 600px;
   }
 
-  #projectBoxMobile2 {
-    margin: 10px;
-    width: 380px;
-    height: 550px;
-  }
-
-  #projectBoxMobile3 {
-    margin: 10px;
-    width: 380px;
-    height: 500px;
-  }
-
-  #projectBoxMobile4 {
-    margin: 10px;
-    width: 380px;
-    height: 500px;
-  }
-
-  #projectBoxMobile5 {
-    margin: 10px;
-    width: 380px;
-    height: 550px;
-  }
+  
 
   #imageBox {
     display: none;
@@ -531,17 +534,24 @@ li {
   
   .titleBox3 {
     margin-top: 14px;
+    width: 100%;
+  }
+
+  .titleBox4 {
+    width: 100%;
   }
 
   
   .titleNamePara {
-    font-size: 15px;
+    font-size: 18px;
   
   }
 
-  #aboutMe {
+   #contact {
     font-size: 15px;
   }
+
+  
 
   .titleName {
     text-align: center;

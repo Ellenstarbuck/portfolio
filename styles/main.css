@@ -45,50 +45,50 @@ body, html {
 }
 
 #aboutMe {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 #contactFont {
-  font-size: 20px;
+  font-size: 16px;
 } 
 
 
 .box1 {
-  width: 500px;
-  padding: 5px;
-  margin: 10px;
+  width: 400px;
 
 }
 
 .boxExperienceLeft {
-  width: 500px;
-  padding: 10px;
-  margin:20px;
+  width: 400px;
+  padding: 8px;
+  margin:16px;
 }
 
 .contactBox {
-  width: 450px;
-  padding: 10px;
+  width: 360px;
+  padding: 8px;
   margin:20px;
 
 }
 
 .box2 {
-  padding: 10px;
-  width: 500px;
-  margin:20px;
+  width: 400px;
+  padding: 8px;
+  margin:16px;
 }
 
 
 .boxContact {
-  width: 500px;
+  width: 400px;
+  padding: 8px;
+  margin:16px;
 }
 
 
 .boxExperienceRight {
-  padding: 10px;
-  width: 500px;
-  margin:20px;
+  padding: 8px;
+  width: 400px;
+  margin:16px;
 }
 
 
@@ -98,7 +98,7 @@ body, html {
   flex-wrap: wrap;
   flex-direction: row;
   list-style: none;
-  width: 500px;
+  width: 400px;
 }
 
 .littleBox {
@@ -111,7 +111,7 @@ li {
   border: 1px solid rgba(0,0,0,.125);
   border-radius: 5%;
   margin: 20px 5px 5px 5px;
-  width: 100px;
+  width: 80px;
   padding-top: 5px;
   text-align: center;
 }
@@ -247,28 +247,28 @@ li {
 }
 
 .titleBox {
-  width: 1000px;
+  width: 800px;
   background-color:white;
-  font-size:36px;
+  font-size:28.8px;
+  margin-bottom: 10px;
 }
 
 .titleBox2 {
-  width: 1000px;
+  width: 800px;
   margin-top: 20px;
   background-color:white;
-  font-size:36px;
+  font-size:28.8px;
 }
 
 .titleBox4 {
-  width: 1000px;
+  width: 800px;
   margin-top: 20px;
-  margin-bottom: 5px;
   background-color:white;
-  font-size:36px;
+  font-size:28.8px;
 }
 
 .titleBox3 {
-  width: 1600px;
+  width: 1280px;
   margin-top: 20px;
 }
 
@@ -280,17 +280,17 @@ li {
 .titleNamePara {
   font-family: 'ABeeZee', sans-serif;
   text-align: left;
-  font-size: 20px;
+  font-size: 16px;
 
 }
 
 .subtitleName {
   font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
+  font-size:24px;
 }
 
 #projectBoxTitle {
-  margin-left: 100px;
+  margin-left: 80px;
 }
 
 
@@ -373,12 +373,17 @@ li {
 
 .contactImage {
   width: 100%;
-  max-width:350px;
+  max-width:280px;
 } 
 
 .navBox {
   display: flex;
   margin: auto;
+}
+
+.left-wrapper {
+  padding: 8px;
+  margin:16px;
 }
 
 @media only screen and (max-width: 1024px) {
